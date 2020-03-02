@@ -164,7 +164,7 @@
 }
 
 .event {
-  margin-bottom: 4.5vh;
+  margin-bottom: 1vh;
 }
 
 .month {
@@ -589,14 +589,16 @@ input::placeholder {
   font-weight: bold;
 }
 
-.notiAction1 {
-  position: absolute;
+.homeView {
+  position: relative;
   width: auto;
-  bottom: 3vh;
-  left: 4vw;
+  top: -4.2vh;
+  margin-left: 59vw;
   padding: 0.5vw 2.5vw;
-  border: 1px solid gray;
   border-radius: 6vw;
+  background: #ffbd00;
+  color: white;
+  font-size: 2.2vh;
 }
 
 .notiAction2 {
@@ -604,9 +606,8 @@ input::placeholder {
   bottom: 3vh;
   right: 4vw;
   padding: 0.5vw 2.5vw;
-  background: #ffdd00;
+  background: #ffbd00;
   color: white;
-  border: 1px solid #ffdd00;
   border-radius: 6vw;
 }
 
