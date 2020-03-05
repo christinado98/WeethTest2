@@ -33,7 +33,7 @@
 
 <body>
     <div id="navBar" class="bar">
-        <p style="margin-top: 1vh; font-size: 6vh; font-family: Varela Round; color: white; letter-spacing: -0.03em;">weeth</p>
+        <p style="margin-top: 0.5vh; font-size: 6vh; font-family: Varela Round; color: white; letter-spacing: -0.03em;">weeth</p>
         <img id="profileHome" onclick="window.location.href='/profile'" src="img/profilePlaceholder.png">
     </div>
 
@@ -52,7 +52,7 @@
     </div>
 
     {{#if events.length}}
-    <div id="timeline" style="margin-bottom: 20vh;">
+    <div id="timeline" style="margin-bottom: 40vh;">
         {{#if viewB}}
         {{#each events}}
         <div class="event" onclick="window.location.href='/letterB/{{id}}'">
