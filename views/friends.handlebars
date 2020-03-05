@@ -82,9 +82,15 @@
           <h5 class="modal-title" id="exampleModalLabel">Imagine you successfully added someone (adding friends is not
             our unique interaction, so we skip implementing this function due to the workload. Thank you.)</h5>
         </div>
+        {{#if viewB}}
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" onclick="window.location.href='/friendsB'">Got it</button>
         </div>
+        {{else}}
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" onclick="window.location.href='/friends'">Got it</button>
+        </div>
+        {{/if}}
       </div>
     </div>
   </div>
