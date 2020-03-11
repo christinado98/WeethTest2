@@ -170,6 +170,10 @@ body {
   margin-bottom: 1vh;
 }
 
+.friendevent {
+  margin-bottom: 3.5vh; 
+}
+
 .month {
   margin-left: -13vw;
   margin-bottom: -7vw;
@@ -598,6 +602,18 @@ input::placeholder {
   width: auto;
   top: -4.2vh;
   margin-left: 59vw;
+  padding: 0.5vw 2.5vw;
+  border-radius: 6vw;
+  background: #ffbd00;
+  color: white;
+  font-size: 2.2vh;
+}
+
+.friendView {
+  position: relative;
+  width: auto;
+  top: 0vh;
+  margin-left: 53vw;
   padding: 0.5vw 2.5vw;
   border-radius: 6vw;
   background: #ffbd00;

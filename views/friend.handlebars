@@ -57,11 +57,13 @@
   <br>
   <div id="timeline">
     {{#each activities}}
-    <div class="event" onclick="window.location.href='/letter/{{id}}'">
+    <div class="friendevent" onclick="window.location.href='/letter/{{id}}'">
       <div class="month">{{month}}</div>
       <div class="eventDot"></div>
       <div class="eventDate">{{date}}</div>
-      <div class="eventCard">{{title}} at {{location}}</div>
+      <div class="eventCard">{{title}} at {{location}}
+      <a class="friendView">View</a></div>
+
     </div>
     {{/each}}
   </div>
