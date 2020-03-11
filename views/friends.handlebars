@@ -43,17 +43,11 @@
   </div>
 
   <div id="botBar" class="bar fixed-nav-bar">
-    {{#if viewB}}
-    <img id="home" onclick="window.location.href='/homeB'" src="../img/home.png" style="filter: grayscale(100%);">
-    <img id="noti" onclick="window.location.href='/notificationB'" src="../img/noti.png" style="filter: grayscale(100%);">
-    <img id="friends" onclick="window.location.href='/friendsB'" src="../img/friends.png">
-    <img class="createBtn" id="createEveB" onclick="window.location.href='/createB'" src="../img/createEventButton.png">
-    {{else}}
+
     <img id="home" onclick="window.location.href='/home'" src="../img/home.png" style="filter: grayscale(100%);">
     <img id="noti" onclick="window.location.href='/notification'" src="../img/noti.png" style="filter: grayscale(100%);">
     <img id="friends" onclick="window.location.href='/friends'" src="../img/friends.png">
-    <img class="createBtn" id="createEveA" onclick="window.location.href='/create'" src="../img/createA.png" style="filter: grayscale(100%);">
-    {{/if}}
+      <img class="createBtn" id="createEveB" onclick="window.location.href='/create'" src="../img/createEventButton.png">
   </div>
 
 
@@ -82,28 +76,13 @@
           <h5 class="modal-title" id="exampleModalLabel">Imagine you successfully added someone (adding friends is not
             our unique interaction, so we skip implementing this function due to the workload. Thank you.)</h5>
         </div>
-        {{#if viewB}}
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick="window.location.href='/friendsB'">Got it</button>
-        </div>
-        {{else}}
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" onclick="window.location.href='/friends'">Got it</button>
         </div>
-        {{/if}}
       </div>
     </div>
   </div>
 
-  {{#if viewB}}
-  {{#each friends}}
-  <div class="friendDiv" onclick="window.location.href = '/friendsB/{{name}}';">
-    <img class="friendPhoto" src="{{imgURL}}">
-    <a class="friendText">{{name}}</a>
-    <img class="friendClickIcon" src="img/clickFriendIcon.png">
-  </div>
-  {{/each}}
-  {{else}}
   {{#each friends}}
   <div class="friendDiv" onclick="window.location.href = '/friends/{{name}}';">
     <img class="friendPhoto" src="{{imgURL}}">
@@ -111,7 +90,6 @@
     <img class="friendClickIcon" src="img/clickFriendIcon.png">
   </div>
   {{/each}}
-  {{/if}}
 </body>
 
 </html>

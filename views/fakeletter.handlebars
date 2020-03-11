@@ -27,17 +27,6 @@
 
 <body>
 
-  {{#if viewB}}
-  <div class="topBackground">
-    <img id="back" onclick="window.location.href='/notificationB'" src="../img/back.png">
-    <img id="deleteButton" src="../img/delete.png" data-toggle="modal" data-target="#deleteModal">
-    <div class="col-md">
-      <h1 id="name">Jianan</h1>
-      <h2 id="eventDate">2020-02-23</h2>
-      <h2 id="eventName">Bowling Again at Superbowl</h2>
-    </div>
-  </div>
-  {{else}}
   <div class="topBackground">
     <img id="back" onclick="window.location.href='/notification'" src="../img/back.png">
     <img id="deleteButton" src="../img/delete.png" data-toggle="modal" data-target="#deleteModal">
@@ -47,7 +36,6 @@
       <h2 id="eventName">Bowling Again at Superbowl</h2>
     </div>
   </div>
-  {{/if}}
 
   <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

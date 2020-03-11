@@ -56,16 +56,6 @@
   {{#if activities}}
   <br>
   <div id="timeline">
-    {{#if viewB}}
-    {{#each activities}}
-    <div class="event" onclick="window.location.href='/letterB/{{id}}'">
-      <div class="month">{{month}}</div>
-      <div class="eventDot"></div>
-      <div class="eventDate">{{date}}</div>
-      <div class="eventCard">{{title}} at {{location}}</div>
-    </div>
-    {{/each}}
-    {{else}}
     {{#each activities}}
     <div class="event" onclick="window.location.href='/letter/{{id}}'">
       <div class="month">{{month}}</div>
@@ -74,7 +64,6 @@
       <div class="eventCard">{{title}} at {{location}}</div>
     </div>
     {{/each}}
-    {{/if}}
   </div>
   {{else}}
   <div>
@@ -82,6 +71,5 @@
     <h2 style="font-size: 5vh">You and {{name}}
       have no activities together yet</h2>
   </div>
-  {{/if}}
-
+{{/if}}
 </body>
